@@ -4,4 +4,11 @@ title {
 
 body {
     text-align: center;
+    background-color: rgb(0, 0, 70);
+}
+
+.titleBar {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 0, 139);
 }
