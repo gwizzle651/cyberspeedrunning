@@ -1,1 +1,2 @@
-# handles operations with the user database
+$pdo = require __DIR__ . '/../config/database.php';
+

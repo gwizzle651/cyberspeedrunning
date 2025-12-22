@@ -2,9 +2,9 @@
 declare(strict_types=1);
 
 $dbHost = 'localhost';
-$dbName = 'cyber_speedrunning' # may change later
-$dbUser = 'db_user'; # change later
-$dbPass = 'db_password'; # change later
+$dbName = 'cyber_speedrunning'; 
+$dbUser = 'dbAdmin'; 
+$dbPass = ''; 
 $dbCharset = 'utf8mb4';
 
 $dsn = "mysql:host=$dbHost;dbname=$dbName;charset=$dbCharset";
@@ -22,3 +22,5 @@ try {
     http_response_code(500);
     exit('Database connection failed.');
 }
+
+return $pdo;

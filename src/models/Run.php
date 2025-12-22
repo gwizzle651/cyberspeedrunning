@@ -1,1 +1,2 @@
-# interactions with the runs database
+$pdo = require __DIR__ . '/../config/database.php';
+ 
