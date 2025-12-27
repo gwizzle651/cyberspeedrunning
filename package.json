@@ -1,0 +1,21 @@
+{
+  "name": "bingleton",
+  "version": "1.0.0",
+  "description": "Bingleton is the platform for anyone who wants to speedrun cyber related software.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gwizzle651/bingleton.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "GPL-3.0-only",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gwizzle651/bingleton/issues"
+  },
+  "homepage": "https://github.com/gwizzle651/bingleton#readme"
+}
