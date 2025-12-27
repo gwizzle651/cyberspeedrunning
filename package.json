@@ -4,6 +4,9 @@
   "description": "Bingleton is the platform for anyone who wants to speedrun cyber related software.",
   "main": "index.js",
   "scripts": {
+    "compile:sass": "npx sass --style=compressed --source-map public/assets/style/scss:public/assets/style/css",
+    "prefix:css": "npx postcss public/assets/style/css/*.css --use autoprefixer -d public/assets/style/css --map",
+    "build:css": "npm-run-all compile:sass prefix:css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/gwizzle651/bingleton/issues"
   },
-  "homepage": "https://github.com/gwizzle651/bingleton#readme"
+  "homepage": "https://github.com/gwizzle651/bingleton#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.23",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^11.0.1",
+    "sass": "^1.97.1"
+  }
 }
