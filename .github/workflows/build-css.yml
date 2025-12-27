@@ -1,0 +1,43 @@
+name: Build CSS
+on:
+  push:
+    paths:
+      - "public/assets/style/scss/**/*.scss"
+jobs:
+  build-css:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: |
+          npm install -g sass postcss-cli autoprefixer
+
+      - name: Compile SCSS
+        run: |
+          npx sass --style=compressed --source-map public/assets/style/scss:public/assets/style/css
+
+      - name: Run PostCSS
+        run: |
+          npx postcss public/assets/style/css/**/*.css --use autoprefixer -d public/assets/style/css --map
+
+      - name: Commit new CSS if changed
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/assets/style/css/**/*.css public/assets/style/css/**/*.css.map
+          if ! git diff --cached --quiet; then
+            git commit -m "Built CSS [skip ci]"
+            git push
+          else
+            echo "CSS was built locally"
+          fi
