@@ -6,13 +6,13 @@ $title = "super epic cyber speedrunning site";
 <head>
     <meta charset="UTF-8">
         <title><?php echo $title; ?></title>
-    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/css/style.css">
 </head>
 <body>
     <div class="titleBar">
         <h1><?php echo $title; ?></h1>
     </div>
-    <img src="/assets/images/scaryImage.jpg">
-    <script src="/assets/scripts/script.js"></script>
+    <img src="assets/images/scaryImage.jpg">
+    <script src="assets/scripts/script.js"></script>
 </body>
 </html>

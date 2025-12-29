@@ -23,6 +23,7 @@
   "homepage": "https://github.com/gwizzle651/bingleton#readme",
   "devDependencies": {
     "autoprefixer": "^10.4.23",
+    "bootstrap": "^5.3.8",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^11.0.1",
     "sass": "^1.97.1"

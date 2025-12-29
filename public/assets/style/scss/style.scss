@@ -1,0 +1,24 @@
+// Import custom var partials
+// Start here
+
+@import "../../../../node_modules/bootstrap/scss/functions";
+
+// Override Bootstrap vars
+// Start here
+
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../node_modules/bootstrap/scss/variables-dark";
+
+// Override Bootstrap maps
+// Start here
+
+@import "../../../../node_modules/bootstrap/scss/maps";
+
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/root";
+
+// Import other Bootstrap partials as needed
+// Start here
+
+// Import custom partials
+// Start here
