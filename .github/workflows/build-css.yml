@@ -20,7 +20,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm install -g sass postcss-cli autoprefixer
+          npm ci
 
       - name: Compile SCSS
         run: |
