@@ -1,0 +1,18 @@
+// Custom width columns
+@for $i from 0 through 11 {
+    .col-#{$i}-5 {
+        @include make-col-ready();
+        @include make-col($i + 0.5);
+    }
+
+    @each $breakpoint, $value in $grid-breakpoints {
+        @if $breakpoint != xs {
+            .col-#{$breakpoint}-#{$i}-5 {
+                @include media-breakpoint-up($breakpoint) {
+                    @include make-col-ready();
+                    @include make-col($i + 0.5);
+                }
+            }
+        }
+    }
+}
