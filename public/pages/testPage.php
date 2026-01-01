@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Import stylesheet -->
-        <link rel="stylesheet" href="../assets/style/css/main.css">
+        <link rel="stylesheet" href="../assets/style/css/core.css">
 
         <title><?= $title; ?></title>
     </head>
