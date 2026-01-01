@@ -1,0 +1,11 @@
+@use "../../includes";
+
+.sidebar {
+    @include includes.make-col(100%);
+    height: 100%;
+
+    color: var(--primary-fg);
+    background-color: var(--primary-bg);
+    
+    border-right: 3px solid var(--primary-bg-em);
+}

@@ -6,7 +6,7 @@ $title = "super epic cyber speedrunning site";
 <head>
     <meta charset="UTF-8">
         <title><?php echo $title; ?></title>
-    <link rel="stylesheet" href="assets/style/css/core.css">
+    <link rel="stylesheet" href="assets/style/css/main.css">
 </head>
 <body>
     <div class="">

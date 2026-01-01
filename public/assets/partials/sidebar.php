@@ -6,7 +6,7 @@
     // TODO: get login status
 ?>
 
-<div class="">
+<div class="sidebar">
     <header class="">
         <h1 class="">The Cyber Speedrunning Leaderboard</h1>
     </header>

@@ -10,10 +10,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Import stylesheets -->
-        <link rel="stylesheet" href="../assets/style/css/core.css">
-        <link rel="stylesheet" href="../assets/style/css/base.css">
-        <link rel="stylesheet" href="../assets/style/css/layout.css">
+        <!-- Import stylesheet -->
+        <link rel="stylesheet" href="../assets/style/css/main.css">
 
         <title><?= $title; ?></title>
     </head>
