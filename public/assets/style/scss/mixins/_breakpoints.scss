@@ -1,0 +1,22 @@
+@use "sass:map";
+@use "config";
+
+@mixin when-vp-larger-than($breakpoint) {
+  @if map.has-key(config.$breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @error "`#{$breakpoint}` is not a valid breakpoint.";
+  }
+}
+
+@mixin when-vp-smaller-than($breakpoint) {
+  @if map.has-key(config.$breakpoints, $breakpoint) {
+    @media (max-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @error "`#{$breakpoint}` is not a valid breakpoint.";
+  }
+}
