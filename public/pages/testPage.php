@@ -5,26 +5,26 @@
 ?>
 
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Import stylesheet -->
+        <!-- Import stylesheets -->
         <link rel="stylesheet" href="../assets/style/css/core.css">
+        <link rel="stylesheet" href="../assets/style/css/base.css">
+        <link rel="stylesheet" href="../assets/style/css/layout.css">
 
         <title><?= $title; ?></title>
     </head>
     <body>
-        <div class="">
-            <div class="">
-                <header class="">
-                    <?php include_once '../assets/partials/sidebar.php';?>
-                </header>
-                <main class="">
-                    
-                </main>
-            </div>
+        <div class="full-page-row">
+            <header class="sidebar-col">
+                <?php include_once '../assets/partials/sidebar.php';?>
+            </header>
+            <main class="">
+                
+            </main>
         </div>
     </body>
 </html>
