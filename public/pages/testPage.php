@@ -16,7 +16,7 @@
         <title><?= $title; ?></title>
     </head>
     <body>
-        <div class="full-page-row">
+        <div class="page-container">
             <header class="sidebar-col">
                 <?php include_once '../assets/partials/sidebar.php';?>
             </header>

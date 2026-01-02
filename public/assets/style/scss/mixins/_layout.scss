@@ -1,13 +1,15 @@
-@mixin make-row($height) {
+@mixin make-container($flex-direction, $width, $height) {
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    flex-direction: $flex-direction;
+    
+    width: $width;
     height: $height;
 }
 
-@mixin make-col($width) {
-    display: flex;
-    flex-direction: column;
-    width: $width;
-    height: 100%;
+@mixin make-row($height, $width: 100%) {
+    @include make-container(row, $width, $height);
+}
+
+@mixin make-col($width, $height: 100%) {
+    @include make-container(column, $width, $height);
 }

@@ -2,8 +2,7 @@
 
 .sidebar {
     @include layout.make-col(100%);
-    height: 100%;
-
+    
     color: var(--primary-fg);
     background-color: var(--primary-bg);
     
