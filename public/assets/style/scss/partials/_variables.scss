@@ -1,0 +1,17 @@
+@use "sass:map";
+@use "../maps/_themes.scss";
+
+
+// Set CSS color vars based on themes
+:root {
+    // Set default theme
+    @each $color in map.keys(themes.$base) {
+        --#{$color}: #{map.get(themes.$base, $color)};
+    }
+
+    &[data-theme="dark"] {
+        @each $color in map.keys(themes.$dark) {
+            --#{$color}: #{map.get(themes.$dark, $color)};
+        }
+    }
+}

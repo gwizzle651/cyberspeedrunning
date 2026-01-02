@@ -1,5 +1,6 @@
-@use "partials/core";
-@use "partials/base";
-@use "partials/layout";
-@use "partials/regions";
-@use "partials/utilities";
+@use "partials/_variables.scss";
+@use "partials/_elements.scss";
+@use "partials/_structure.scss";
+@use "partials/_regions.scss";
+@use "partials/_components.scss";
+@use "partials/_utilities.scss";

@@ -1,0 +1,11 @@
+@use "../mixins/_layout.scss";
+
+// Rows
+.full-page-row {
+    @include layout.make-row(100vh);
+}
+
+// Columns
+.sidebar-col {
+    @include layout.make-col(20%);
+}

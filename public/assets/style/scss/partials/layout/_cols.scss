@@ -1,5 +1,0 @@
-@use "../../includes";
-
-.sidebar-col {
-    @include includes.make-col(20%);
-}

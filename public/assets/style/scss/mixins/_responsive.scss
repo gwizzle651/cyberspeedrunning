@@ -1,8 +1,8 @@
 @use "sass:map";
-@use "config";
+@use "../maps/_breakpoints.scss" as *;
 
 @mixin when-vp-larger-than($breakpoint) {
-  @if map.has-key(config.$breakpoints, $breakpoint) {
+  @if map.has-key($breakpoints, $breakpoint) {
     @media (min-width: map-get($breakpoints, $breakpoint)) {
       @content;
     }
@@ -12,7 +12,7 @@
 }
 
 @mixin when-vp-smaller-than($breakpoint) {
-  @if map.has-key(config.$breakpoints, $breakpoint) {
+  @if map.has-key($breakpoints, $breakpoint) {
     @media (max-width: map-get($breakpoints, $breakpoint)) {
       @content;
     }

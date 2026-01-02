@@ -1,5 +1,0 @@
-@use "../../includes";
-
-.full-page-row {
-    @include includes.make-row(100vh);
-}
