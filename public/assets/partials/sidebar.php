@@ -7,11 +7,11 @@
 ?>
 
 <div class="sidebar">
-    <header class="">
+    <header class="header">
         <h1 class="">The Cyber Speedrunning Leaderboard</h1>
     </header>
 
-    <nav class="">
+    <nav class="nav-menu-v">
     <!-- TODO: add actual links -->
         <a class="">Dashboard</a>
         <a class="">Leaderboard</a>

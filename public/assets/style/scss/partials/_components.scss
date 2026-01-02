@@ -1,0 +1,49 @@
+@use "../mixins/_layout.scss";
+
+// Style for headers
+.header {
+    color: var(--primary-fg);
+    background-color: var(--primary-bg);
+
+    padding: {
+        left: 0.25rem;
+        top: 0.5rem;
+        bottom: 0.5rem;
+    }
+
+    border-bottom: 3px solid var(--primary-bg-em);
+}
+
+// Nav menu and nav link style
+.nav-menu {
+    &-h, &-v {
+        color: var(--primary-fg);
+        background-color: var(--primary-bg);
+
+        a {
+            &:hover {
+                background-color: var(--primary-bg-em);
+                color: var(--primary-fg-em);
+            }
+        }
+    }
+
+    &-h {
+        @include layout.make-row($width: auto, $height: 100%);
+
+        a {
+            text-align: center;
+            border-right: 1px solid var(--primary-bg-em);
+        }
+    }
+
+    &-v {
+        @include layout.make-col($width: 100%, $height: auto);
+        border-bottom: 2px solid var(--primary-bg-em);
+
+        a {
+            padding-left: 0.5rem;
+            border-bottom: 1px solid var(--primary-bg-em);
+        }
+    }
+}
