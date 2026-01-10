@@ -1,7 +1,6 @@
-<!-- Home page -->
+<!-- Login page -->
 <?php
-    $title = "Dashboard | The Cyber Speedrunning Leaderboard";
-    $category = "dashboard";
+    $title = "Login | The Cyber Speedrunning Leaderboard";
 ?>
 
 <!doctype html>
@@ -17,9 +16,6 @@
     </head>
     <body>
         <div class="page-container">
-            <header class="sidebar-col">
-                <?php include_once 'assets/partials/sidebar.php';?>
-            </header>
             <main class="">
                 
             </main>
