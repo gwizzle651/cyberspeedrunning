@@ -1,6 +1,6 @@
-<!-- Page for testing partials -->
+<!-- Home page -->
 <?php
-    $title = "Test Page";
+    $title = "Dashboard";
     $category = "Dashboard";
 ?>
 
