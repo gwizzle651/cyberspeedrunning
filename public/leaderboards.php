@@ -1,7 +1,7 @@
-<!-- Home page -->
+<!-- Central page for accessing all leaderboards -->
 <?php
-    $title = "Dashboard | The Cyber Speedrunning Leaderboard";
-    $category = "dashboard";
+    $title = "Leaderboards | The Cyber Speedrunning Leaderboard";
+    $category = "leaderboards";
 ?>
 
 <!doctype html>
