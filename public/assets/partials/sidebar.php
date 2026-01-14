@@ -12,13 +12,13 @@
     </header>
     <!-- TODO: make current location have highlight border -->
     <nav class="nav-menu-v">
-        <a href="https://bingleton.org/dashboard.php" class="h4">Dashboard</a>
-        <a href="https://bingleton.org/leaderboards.php" class="h4">Leaderboards</a>
-        <a href="https://bingleton.org/help.php" class="h4">Help</a>
+        <a href="https://cyberspeedrunning.com/dashboard.php" class="h4">Dashboard</a>
+        <a href="https://cyberspeedrunning.com/leaderboards.php" class="h4">Leaderboards</a>
+        <a href="https://cyberspeedrunning.com/help.php" class="h4">Help</a>
     </nav>
 
     <footer class="footer">
     <!-- TODO: check login status and display user profile -->
-        <a href="https://bingleton.org/account/login.php" class="button-l-highlight h4-centered w-100">Login</a>
+        <a href="https://cyberspeedrunning.com/account/login.php" class="button-l-highlight h4-centered w-100">Login</a>
     </footer>
 </div>
