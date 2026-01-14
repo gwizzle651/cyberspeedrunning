@@ -1,6 +1,6 @@
-<!-- Login page -->
+<!-- Register page -->
 <?php
-    $title = "Login | The Cyber Speedrunning Leaderboard";
+    $title = "Register | The Cyber Speedrunning Leaderboard";
 ?>
 
 <!doctype html>
@@ -18,9 +18,9 @@
         <div class="page-container">
             <main class="">
                 <a href="../dashboard.php">Back to dashboard</a>
-                <h1>Login</h1>
+                <h1>Register</h1>
                 <form action="../scripts/form-handler.php" method="post" accept-charset="utf-8">
-                    <input type="hidden" name="form-id" value="login">
+                    <input type="hidden" name="form-id" value="register">
                     <label> 
                         Username:
                         <input type="text" name="username" required>
@@ -29,9 +29,13 @@
                         Password:
                         <input type="password" name="password" required>
                     </label>
-                    <button type="submit">Login</button>
+                    <label> 
+                        Confirm Password:
+                        <input type="password" name="confirm-password" required>
+                    </label>
+                    <button type="submit">Register</button>
                 </form> 
-                <a href="register.php">Need an account?</a>
+                <a href="login.php">Already have an account?</a>
             </main>
         </div>
     </body>
