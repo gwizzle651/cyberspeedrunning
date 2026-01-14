@@ -1,5 +1,5 @@
 ## Description
-***Bingleton*** is the platform for anyone who wants to speedrun cyber related software.
+***Cyberspeedrunning.com*** is the platform for anyone who wants to speedrun cyber related software.
 
 ## Naming Conventions  
 ### Branches
