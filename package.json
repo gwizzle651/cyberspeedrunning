@@ -1,30 +1,25 @@
 {
-  "name": "bingleton",
+  "name": "Cyberspeedrunning",
   "version": "1.0.0",
-  "description": "Bingleton is the platform for anyone who wants to speedrun cyber related software.",
+  "description": "Cyberspeedrunning.com is the platform for anyone who wants to speedrun cyber related software.",
   "main": "index.js",
   "scripts": {
     "compile:sass": "npx sass --style=compressed --source-map public/assets/style/scss:public/assets/style/css",
-    "prefix:css": "npx postcss public/assets/style/css/*.css --use autoprefixer -d public/assets/style/css --map",
-    "build:css": "npm-run-all compile:sass prefix:css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gwizzle651/bingleton.git"
+    "url": "git+https://github.com/gwizzle651/cyberspeedrunning.git"
   },
   "keywords": [],
   "author": "",
   "license": "GPL-3.0-only",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/gwizzle651/bingleton/issues"
+    "url": "https://github.com/gwizzle651/cyberspeedrunning/issues"
   },
-  "homepage": "https://github.com/gwizzle651/bingleton#readme",
+  "homepage": "https://github.com/gwizzle651/cyberspeedrunning#readme",
   "devDependencies": {
-    "autoprefixer": "^10.4.23",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^11.0.1",
     "sass": "^1.97.2"
   }
 }
