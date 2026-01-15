@@ -5,7 +5,7 @@
 ### Branches
 For naming branches, it is generally accepted that you will name the branch in two parts.  
 The first of these parts will be a categorical name. The second part will be the specific thing that you are working on.  
-For example, "category-specific_feature". Notice that the two parts are separated  
+For example, "category/specific-feature". Notice that the two parts are separated  
 using slashes, and for multiple words in-between the dashes, snake case is used. Try to keep the word count below 4.  
 Here is a list of the most common categorical names:  
 - *structure* - HTML and general file hierarchy.
@@ -15,7 +15,7 @@ Here is a list of the most common categorical names:
 - *script* - JS and PHP; anything else that adds interactivity to a web page.  
 - *refactor* - Rewriting previously written code without changing any core functionality. 
 - *dev_tools* - Github and its tools such as workflows.  
-- *testing* - Rarely used for niche cases. typically by the owner of the domain in order to verify that the server and DNS are working as expected.  
+- *testing* - Rarely used for niche cases. Typically by the owner of the domain in order to verify that the server and DNS are working as expected.  
 
 ## Contact Information
 If you have any questions, category proposals, or "game" proposals, please send them to:  
