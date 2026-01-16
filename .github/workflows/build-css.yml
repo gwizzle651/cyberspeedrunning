@@ -24,11 +24,7 @@ jobs:
 
       - name: Compile SCSS
         run: |
-          npx sass --style=compressed --source-map public/assets/style/scss:public/assets/style/css
-
-      - name: Run PostCSS
-        run: |
-          npx postcss public/assets/style/css/**/*.css --use autoprefixer -d public/assets/style/css --map
+          npm run compile:sass
 
       - name: Commit new CSS if changed
         run: |
