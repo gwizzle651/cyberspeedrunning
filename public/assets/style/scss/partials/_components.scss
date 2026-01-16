@@ -78,12 +78,8 @@
 // Buttons Style
 .button-l {
     // Style for all buttons
-    &, &-highlight, &-alert, &-success, &-warning, &-danger {
-        border: {
-            size: map.get(border.$size, thin);
-            radius: map.get(border.$radius, l);
-        }
-
+    &-highlight, &-alert, &-success, &-warning, &-danger {
+        border-radius: map.get(border.$radius, l);
         padding: map.get(spacing.$padding, m);
         color: var(--secondary-fg);
         background-color: var(--secondary-bg);
