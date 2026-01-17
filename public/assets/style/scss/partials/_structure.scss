@@ -1,11 +1,17 @@
 @use "../mixins/_layout.scss";
 
-// Rows
+// Containers
 .page-container {
     @include layout.make-container(row, 100vw, 100vh);
 }
 
+//Rows
+
 // Columns
 .sidebar-col {
     @include layout.make-col(20%);
+}
+
+.main-col {
+    @include layout.make-col(100%);
 }

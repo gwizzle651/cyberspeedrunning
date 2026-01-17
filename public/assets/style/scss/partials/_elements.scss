@@ -1,6 +1,10 @@
 @use "sass:map";
 @use "../mixins/_headings.scss";
 
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
     color: var(--secondary-fg);
     background-color: var(--secondary-bg);

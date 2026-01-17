@@ -20,8 +20,10 @@
             <header class="sidebar-col">
                 <?php include_once 'assets/partials/sidebar.php';?>
             </header>
-            <main class="">
-                
+            <main class="main-col">
+                <header class="header">
+                    <h2 class="h2">Dashboard</h2>
+                </header>
             </main>
         </div>
     </body>
