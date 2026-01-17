@@ -20,8 +20,17 @@
             <header class="sidebar-col">
                 <?php include_once 'assets/partials/sidebar.php';?>
             </header>
-            <main class="">
-                
+            <main class="main-col">
+                <header class="header">
+                    <h2 class="h2">Dashboard</h2>
+                </header>
+                <div class="text-box-m-centered">
+                    <h3 class="h3-centered">Notice</h3>
+                    <p class="em">
+                        The Dashboard is a work in progress and is not ready yet. 
+                        It will be implemented in the near future, but, for now, please navigate to the leaderboards page.
+                    </p>
+                </div>
             </main>
         </div>
     </body>

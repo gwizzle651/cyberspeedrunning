@@ -1,4 +1,5 @@
 @use "sass:map";
+@use "../maps/_text.scss";
 @use "../mixins/_headings.scss";
 
 // Headings
@@ -31,5 +32,22 @@
 
     &-centered {
         @include headings.make-h4($is-centered: true); 
+    }
+}
+
+.em {
+    font-weight: map.get(text.$font-weight, semi-bold);
+}
+
+// Text boxes 
+.text-box-m {
+    &, &-centered {
+        width: 40%;
+        height: auto;
+    }
+    
+    &-centered {
+        margin: auto;
+        text-align: center;
     }
 }
