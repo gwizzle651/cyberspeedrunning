@@ -8,7 +8,13 @@
     color: var(--primary-fg);
     background-color: var(--primary-bg);
 
-    padding: map.get(spacing.$padding, xl);
+    padding: {
+        left: map.get(spacing.$padding, xl);
+        right: map.get(spacing.$padding, xl);
+        top: map.get(spacing.$padding, m);
+        bottom: map.get(spacing.$padding, m);
+    }
+    
     border-bottom: 
         map.get(border.$width, normal) 
         solid 

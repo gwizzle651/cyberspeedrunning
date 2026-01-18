@@ -1,5 +1,10 @@
 @use "sass:map";
+@use "../maps/_text.scss";
 @use "../mixins/_headings.scss";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
 
 body {
     color: var(--secondary-fg);
@@ -27,6 +32,11 @@ h3 {
 
 h4 {
     @include headings.make-h4(); 
+    margin: 0;
+}
+
+p {
+    font-size: map.get(text.$font-size, p);
     margin: 0;
 }
 
