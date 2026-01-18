@@ -29,3 +29,7 @@ h4 {
     @include headings.make-h4(); 
     margin: 0;
 }
+
+a {
+    text-decoration: none;
+}
