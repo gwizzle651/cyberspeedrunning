@@ -8,5 +8,9 @@
     color: var(--primary-fg);
     background-color: var(--primary-bg);
     
-    border-right: map.get(border.$size, normal) solid var(--primary-bg-em);
+    border-right: 
+        map.get(border.$width, normal) 
+        solid 
+        var(--primary-bg-em)
+    ;
 }
