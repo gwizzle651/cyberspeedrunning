@@ -39,3 +39,7 @@ p {
     font-size: map.get(text.$font-size, p);
     margin: 0;
 }
+
+a {
+    text-decoration: none;
+}

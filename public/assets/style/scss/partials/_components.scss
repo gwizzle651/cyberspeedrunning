@@ -16,7 +16,7 @@
     }
     
     border-bottom: 
-        map.get(border.$size, normal) 
+        map.get(border.$width, normal) 
         solid 
         var(--primary-bg-em)
     ;
@@ -54,7 +54,7 @@
         a {
             text-align: center;
             border-right: 
-                map.get(border.$size, thin) 
+                map.get(border.$width, thin) 
                 solid 
                 var(--primary-bg-em)
             ;
@@ -65,7 +65,7 @@
     &-v {
         @include layout.make-col($width: 100%, $height: auto);
         border-bottom: 
-            (map.get(border.$size, normal) - map.get(border.$size, thin))
+            (map.get(border.$width, normal) - map.get(border.$width, thin))
             solid 
             var(--primary-bg-em)
         ;
@@ -73,7 +73,7 @@
         // Nav link style
         a {
             border-bottom: 
-                map.get(border.$size, thin) 
+                map.get(border.$width, thin) 
                 solid 
                 var(--primary-bg-em)
             ;
