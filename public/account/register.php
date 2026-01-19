@@ -19,19 +19,19 @@
             <main class="">
                 <a href="../dashboard.php">Back to dashboard</a>
                 <h1>Register</h1>
-                <form action="../scripts/form-handler.php" method="post" accept-charset="utf-8">
+                <form action="../assets/scripts/form-handler.php" method="post" accept-charset="utf-8">
                     <input type="hidden" name="form-id" value="register">
                     <label> 
-                        Username:
-                        <input type="text" name="username" required>
+                        Username
+                        <input type="text" name="username" required maxlength="30" pattern="^[a-zA-Z0-9_\-\.]+$">
                     </label>
                     <label>
-                        Password:
-                        <input type="password" name="password" required>
+                        Password
+                        <input type="password" name="password" required autocomplete="off" minlength="8" maxlength="128">
                     </label>
                     <label> 
-                        Confirm Password:
-                        <input type="password" name="confirm-password" required>
+                        Confirm Password
+                        <input type="password" name="confirm-password" required autocomplete="off" minlength="8" maxlength="128">
                     </label>
                     <button type="submit">Register</button>
                 </form> 

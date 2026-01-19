@@ -19,15 +19,15 @@
             <main class="">
                 <a href="../dashboard.php">Back to dashboard</a>
                 <h1>Login</h1>
-                <form action="../scripts/form-handler.php" method="post" accept-charset="utf-8">
+                <form action="../assets/scripts/form-handler.php" method="post" accept-charset="utf-8">
                     <input type="hidden" name="form-id" value="login">
                     <label> 
-                        Username:
-                        <input type="text" name="username" required>
+                        Username
+                        <input type="text" name="username" required maxlength="30">
                     </label>
                     <label>
-                        Password:
-                        <input type="password" name="password" required>
+                        Password
+                        <input type="password" name="password" required autocomplete="off" maxlength="128">
                     </label>
                     <button type="submit">Login</button>
                 </form> 
